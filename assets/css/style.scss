@@ -9,7 +9,7 @@
 
 :root{
     --color-primary: #1e1e24;
-    --color-secondary: #27ae60;
+    --color-secondary: #00E7F2;
     --color-white: #FFFFFF;
     --color-black: #000;
     --color-grey-0: #f7ebe8;
@@ -116,7 +116,7 @@ section{
     position: absolute;
     left: 0;
     top: 0;
-    padding: 3rem 18rem;
+    padding: 4rem 12rem;
 }
 
 .section{
@@ -152,7 +152,7 @@ section{
 
 .active{
     display: block;
-    animation: scaleAnim 1s ease-in-out;
+    animation: scaleAnim 1s ease-in-out !important;
     @keyframes scaleAnim {
         0%{
             transform: translateY(-100) scaleY(0);
@@ -293,7 +293,7 @@ section{
                 position: relative;
                 text-transform: uppercase;
                 font-size: 1.2rem;
-                color: var(--color-grey-1);
+                color: var(--color-secondary);
                 letter-spacing: 2px;
                 &::before{
                     content:"";
@@ -314,7 +314,7 @@ section{
         p{
             line-height: 2rem;
             padding: 1rem;
-            color: var(--color-grey-1)
+            color: var(--color-white)
 
         }
         h4{
@@ -408,6 +408,9 @@ section{
     display: flex;
     padding-top: 3.5rem;
     .left-contact{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
         flex: 2;
         h4{
             margin-top: 1rem;
@@ -416,7 +419,7 @@ section{
         }
         p{
             margin: 1rem 0;
-            line-height: 2rem
+            line-height: 1.5rem
         }
         .contact-info{
             .contact-item{
