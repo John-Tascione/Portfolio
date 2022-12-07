@@ -1,3 +1,5 @@
+// Global Styling Reset and Variables
+
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +40,76 @@ header{
     overflow: hidden;
 }
 
+.btn-con{
+    display: flex;
+    align-self: flex-start;
+}
+
+.main-btn{
+    border-radius: 30px;
+    color: inherit;
+    font-weight: 600;
+    position: relative;
+    border: 1px solid var(--color-secondary);
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    overflow: hidden;
+    .btn-text{
+        padding: 0 2rem
+    }
+    .btn-icon{
+        color: var(--color-white);
+        background-color: var(--color-secondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 1rem
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: var(--transition);
+        z-index: -1;
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-secondary);
+            transform: translateX(0);
+        }
+    }
+}
+
+.main-title{
+    text-align: center;
+    h2{
+        position: relative;
+        text-transform: uppercase;
+        font-size: 4rem;
+        font-weight: 700;
+        span{
+            color: var(--color-secondary)
+        }
+        .bg-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: var(--color-grey-1);
+            transition: var(--transition);
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            font-weight: 800;
+            font-size :6.3rem;
+        }
+    }
+}
+// Base sections styling
 section{
     min-height: 100vh;
     width: 100%;
@@ -92,6 +164,7 @@ section{
     }
 }
 
+// Navigation buttons
 .controlls{
     position: fixed;
     z-index: 10;
@@ -129,6 +202,7 @@ section{
     }
 }
 
+// Homepage
 .header-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -185,6 +259,7 @@ section{
     }
 }
 
+// About Page
 .about-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -249,8 +324,10 @@ section{
     }
 }
 
+// Portfolio Page
 .port-text{
-    padding: 2rem 0;
+    font-size: 1.5rem;
+    padding: 1rem 0;
     text-align: center;
 }
 
@@ -325,77 +402,6 @@ section{
                 opacity: 1;
                 transform: scale(1);        
             }
-
-
-.btn-con{
-    display: flex;
-    align-self: flex-start;
-}
-
-.main-btn{
-    border-radius: 30px;
-    color: inherit;
-    font-weight: 600;
-    position: relative;
-    border: 1px solid var(--color-secondary);
-    display: flex;
-    align-self: flex-start;
-    align-items: center;
-    overflow: hidden;
-    .btn-text{
-        padding: 0 2rem
-    }
-    .btn-icon{
-        color: var(--color-white);
-        background-color: var(--color-secondary);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        padding: 1rem
-    }
-    &::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateX(100%);
-        transition: var(--transition);
-        z-index: -1;
-    }
-    &:hover{
-        &::before{
-            width: 100%;
-            height: 100%;
-            background-color: var(--color-secondary);
-            transform: translateX(0);
-        }
-    }
-}
-
-.main-title{
-    text-align: center;
-    h2{
-        position: relative;
-        text-transform: uppercase;
-        font-size: 4rem;
-        font-weight: 700;
-        span{
-            color: var(--color-secondary)
-        }
-        .bg-text{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            color: var(--color-grey-1);
-            transition: var(--transition);
-            z-index: -1;
-            transform: translate(-50%, -50%);
-            font-weight: 800;
-            font-size :6.3rem;
-        }
-    }
-}
 
 // Contact Section
 .contact-content-container{

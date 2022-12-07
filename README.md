@@ -1,2 +1,2 @@
 # Portfolio
-Portfolio of deployed projects (work in progress)
+Portfolio of deployed projects can be found: [here](https://john-tascione.github.io/Portfolio/)
