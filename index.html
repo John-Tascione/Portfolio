@@ -241,46 +241,26 @@
                     </div>
                 </div>
                 <div class="right-contact">
-                    <form action="/send-email" method="post" class="contact-form">
+                    <form id="contact-form" class="contact-form">
                         <div class="input-control input-control-2">
-                          <input type="text" name="name" required placeholder="Your Name Here">
-                          <input type="email" name="email" required placeholder="Your Email Here">
+                            <input type="text" id="name" required placeholder="Your Name Here">
+                            <input type="email" id="email" required placeholder="Your Email Here">
                         </div>
                         <div class="input-control">
-                          <input type="text" name="subject" required placeholder="Enter Subject">
+                            <input type="text" id="subject" required placeholder="Enter Subject">
                         </div>
                         <div class="input-control">
-                          <textarea name="message" id="" cols="15" rows="8" placeholder="Your Message Here"></textarea>
+                            <textarea id="message" cols="15" rows="8" placeholder="Your Message Here"></textarea>
                         </div>
                         <div class="submit-btn">
-                          <button type="submit" class="main-btn">
-                            <span class="btn-text">Contact John</span>
-                            <span class="btn-icon">
-                              <i class="far fa-paper-plane"></i>
-                            </span>
-                          </button>
-                        </div>
-                      </form>
-                    <!-- <form action="mailto:jtash25@gmail.com" method="post" enctype="text/plain" class="contact-form">
-                        <div class="input-control input-control-2">
-                            <input type="text" required placeholder="Your Name Here">
-                            <input type="email" required placeholder="Your Email Here">
-                        </div>
-                        <div class="input-control">
-                            <input type="text" required placeholder="Enter Subject">
-                        </div>
-                        <div class="input-control">
-                            <textarea name="" id="" cols="15" rows="8" placeholder="Your Message Here"></textarea>
-                        </div>
-                        <div class="submit-btn">
-                            <a href="" class="main-btn">
+                            <a href="" id="submit" class="main-btn">
                                 <span class="btn-text"> Contact John</span>
                                 <span class="btn-icon">
                                     <i class="far fa-paper-plane"></i>
                                 </span>
                               </a>
                         </div>
-                    </form> -->
+                    </form>
                 </div>
             </div>
         </div>
@@ -308,5 +288,7 @@
       </div> -->
     </div>
     <script src="./assets/app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./assets/submit.js"></script>
   </body>
 </html>
