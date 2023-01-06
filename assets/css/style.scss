@@ -518,32 +518,31 @@ section {
         }
     }
   }
-//   .input-control {
-//     margin: 1.5rem 0;
-//     input,
-//     textarea {
-//       border-radius: 30px;
-//       font-weight: inherit;
-//       font-size: inherit;
-//       font-family: inherit;
-//       padding: 0.8rem 1.1rem;
-//       outline: none;
-//       border: none;
-//       background-color: var(--color-grey-1);
-//       width: 100%;
-//       resize: none;
-//     }
-//   }
-//   .input-control-2 {
-//     display: flex;
-//     :last-child {
-//       margin-left: 1.5rem;
-//     }
-//   }
-//   .submit-btn {
-//     display: flex;
-//     justify-content: flex-start;
-//   }
+  .input-control {
+    input,
+    textarea{
+      border-radius: 30px;
+      font-weight: inherit;
+      font-size: inherit;
+      font-family: inherit;
+      padding: 0.8rem 1.1rem;
+      outline: none;
+      border: none;
+      background-color: var(--color-grey-1);
+      width: 100%;
+      resize: none;
+    }
+  }
+  .input-control-2 {
+    display: flex;
+    :last-child {
+      margin-left: .5rem;
+    }
+  }
+  .submit-btn {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @import "./media.scss";
